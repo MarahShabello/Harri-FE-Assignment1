@@ -1,0 +1,138 @@
+body{
+    background-color: #fafafa;
+}
+.back-btn{
+    display: block;
+    margin: 50px;
+    font-family: NunitoSans-Regular;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 1px 1px 6px 1px #cccccc;
+}
+
+.back-icon{
+    margin-right: 8px;
+}
+
+.details{
+    display: flex;
+    padding: 0 50px;
+}
+
+.flag{
+    width: 460px;
+    height: 340px;
+    object-fit: cover;
+}
+
+.country-name{
+    font-size: 24px;
+    font-family: NunitoSans-ExtraBold;
+    display: block;
+}
+
+.info-firstCol{
+    margin-right: 145px;
+}
+
+.info {
+    text-align: left;
+    list-style-type: none;
+    font-size: 14px;
+    margin-left: 0;
+    color: #111517;
+    padding: 0;
+    display: inline-block;
+}
+
+.info li{
+    padding-bottom: 6px;
+}
+
+.details-col1 {
+    display: inline;
+    font-family: NunitoSans-Bold;
+}
+.details-col2 {
+    display: inline;
+    font-family: NunitoSans-Regular;
+}
+
+.details-div{
+    display: block;
+    margin-left: 80px;
+}
+
+.country-info{
+    display: flex;
+}
+
+.border-div{
+    margin-top: 50px;
+}
+
+.border-countries{
+    display: inline;
+    font-family: NunitoSans-Bold;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.border-btns{
+    display: inline;
+    margin-left: 20px;
+}
+
+.border{
+    font-family: NunitoSans-Regular;
+    font-size: 12px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 1px 1px 1px 2px #eee;
+    border-radius: 2px;
+    margin-right: 6px;
+    width: 90px;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+@media (max-width: 600px){
+    .border-countries{
+        display: block;
+    }
+    .flag{
+        width: 400px;
+        object-fit: cover;
+        height: 250px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .country-name{
+        display: block;
+        margin-left: -30px;
+    }
+    .details{
+        display: inline-block;
+        /*margin-left: -20px;*/
+    }
+    .country-info{
+        display: block;
+        margin-left: -30px;
+    }
+    .details-div{
+        margin-left: 0;
+    }
+    .border-div{
+        margin-top: 20px;
+        margin-left: -20px;
+    }
+    .border-btns{
+        display: block;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+    body{
+        background-color: teal;
+    }
+}
