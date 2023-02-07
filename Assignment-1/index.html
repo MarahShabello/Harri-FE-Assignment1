@@ -2,66 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Countries</title>
-    <link rel="icon" href="earth.svg">
-    <link rel="stylesheet" href="index.css">
+    <link href="earth.svg" rel="icon">
+    <link href="index.css" rel="stylesheet">
 
     <!-- For icons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
-    <nav>
-        <p>Where in the world?</p>
-        <button type="submit" class="dark-mode">
-            <ion-icon name="moon-outline" class="dark-mode-icon"></ion-icon>Dark Mode
-        </button>
-    </nav>
+<header>
+    <h1>Where in the world?</h1>
+    <button class="dark-mode" type="button">
+        <ion-icon class="dark-mode-icon" name="moon-outline"></ion-icon>
+        Dark Mode
+    </button>
+</header>
 
-    <div class="search-bar">
-        <form>
-            <input class="search" type="search" placeholder="Search for a country...">
-        </form>
-        <div class="dropdown-list">
-            <button class="dropdown-btn">
-                Filter by Region
-                <ion-icon name="chevron-down" class="dropdown-icon"></ion-icon>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Africa</a>
-                <a href="#">America</a>
-                <a href="#">Asia</a>
-                <a href="#">Europe</a>
-                <a href="#">Oceania</a>
-            </div>
+<div class="search-bar">
+    <label>
+        <input class="search" placeholder="Search for a country..." type="search">
+    </label>
+    <div class="dropdown-list">
+        <button class="dropdown-btn">
+            Filter by Region
+            <ion-icon class="dropdown-icon" name="chevron-down"></ion-icon>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">Africa</a>
+            <a href="#">America</a>
+            <a href="#">Asia</a>
+            <a href="#">Europe</a>
+            <a href="#">Oceania</a>
         </div>
     </div>
+</div>
 
-    <div class="container">
-        <a href="country.html">
-            <div class="box">
-                <img src="images/de.svg" alt="Flag of Germany"/>
-                <p class="country-name">Germany</p>
-                <ul class="country-info">
-                    <li>
-                        <p class="info-col1">Population:</p>
-                        <p class="info-col2">81,770,900</p>
-                    </li>
-                    <li>
-                        <p class="info-col1">Region: </p>
-                        <p class="info-col2">Europe</p>
-                    </li>
-                    <li>
-                        <p class="info-col1">Capital: </p>
-                        <p class="info-col2">Berlin</p>
-                    </li>
-                </ul>
-            </div>
-        </a>
+<div class="container">
+    <a href="country.html">
         <div class="box">
-            <img src="images/us.svg" alt="Flag of USA"/>
+            <img alt="Flag of Germany" src="images/de.svg"/>
+            <p class="country-name">Germany</p>
+            <ul class="country-info">
+                <li>
+                    <p class="info-col1">Population:</p>
+                    <p class="info-col2">81,770,900</p>
+                </li>
+                <li>
+                    <p class="info-col1">Region: </p>
+                    <p class="info-col2">Europe</p>
+                </li>
+                <li>
+                    <p class="info-col1">Capital: </p>
+                    <p class="info-col2">Berlin</p>
+                </li>
+            </ul>
+        </div>
+    </a>
+
+    <a href="#">
+        <div class="box">
+            <img alt="Flag of USA" src="images/us.svg"/>
             <p class="country-name">United States of America</p>
             <ul class="country-info">
                 <li>
@@ -78,8 +81,10 @@
                 </li>
             </ul>
         </div>
+    </a>
+    <a href="#">
         <div class="box">
-            <img src="images/br.svg" alt="Flag of Brazil"/>
+            <img alt="Flag of Brazil" src="images/br.svg"/>
             <p class="country-name">Brazil</p>
             <ul class="country-info">
                 <li>
@@ -96,8 +101,10 @@
                 </li>
             </ul>
         </div>
+    </a>
+    <a href="#">
         <div class="box">
-            <img src="images/is.svg" alt="Flag of Iceland"/>
+            <img alt="Flag of Iceland" src="images/is.svg"/>
             <p class="country-name">Iceland</p>
             <ul class="country-info">
                 <li>
@@ -114,11 +121,10 @@
                 </li>
             </ul>
         </div>
-    </div>
-
-    <div class="container">
+    </a>
+    <a href="#">
         <div class="box">
-            <img src="images/af.svg" alt="Flag of Afghanistan"/>
+            <img alt="Flag of Afghanistan" src="images/af.svg"/>
             <p class="country-name">Afghanistan</p>
             <ul class="country-info">
                 <li>
@@ -135,8 +141,10 @@
                 </li>
             </ul>
         </div>
+    </a>
+    <a href="#">
         <div class="box">
-            <img src="images/ax.svg" alt="Flag of Aland Islands"/>
+            <img alt="Flag of Aland Islands" src="images/ax.svg"/>
             <p class="country-name">Aland Islands</p>
             <ul class="country-info">
                 <li>
@@ -153,8 +161,10 @@
                 </li>
             </ul>
         </div>
+    </a>
+    <a href="#">
         <div class="box">
-            <img src="images/al.svg" alt="Flag of Albania"/>
+            <img alt="Flag of Albania" src="images/al.svg"/>
             <p class="country-name">Albania</p>
             <ul class="country-info">
                 <li>
@@ -171,8 +181,10 @@
                 </li>
             </ul>
         </div>
+    </a>
+    <a href="#">
         <div class="box">
-            <img src="images/dz.svg" alt="Flag of Algeria"/>
+            <img alt="Flag of Algeria" src="images/dz.svg"/>
             <p class="country-name">Algeria</p>
             <ul class="country-info">
                 <li>
@@ -189,7 +201,8 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </a>
+</div>
 
 </body>
 </html>
