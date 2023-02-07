@@ -1,15 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     background-color: #fafafa;
 }
 .back-btn{
     display: block;
-    margin: 50px;
+    margin: 60px;
     font-family: NunitoSans-Regular;
     padding: 10px 40px;
     border: none;
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 1px 1px 6px 1px #cccccc;
+    /*width: 30%;*/
 }
 
 .back-icon{
@@ -18,29 +23,29 @@ body{
 
 .details{
     display: flex;
-    padding: 0 50px;
+    padding: 0 65px;
 }
 
 .flag{
-    width: 460px;
-    height: 340px;
+    width: 42%;
+    height: 400px;
     object-fit: cover;
 }
 
 .country-name{
-    font-size: 24px;
+    font-size: 30px;
     font-family: NunitoSans-ExtraBold;
     display: block;
 }
 
 .info-firstCol{
-    margin-right: 145px;
+    margin-right: 180px;
 }
 
 .info {
     text-align: left;
     list-style-type: none;
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 0;
     color: #111517;
     padding: 0;
@@ -62,7 +67,7 @@ body{
 
 .details-div{
     display: block;
-    margin-left: 80px;
+    margin-left: 120px;
 }
 
 .country-info{
@@ -70,14 +75,14 @@ body{
 }
 
 .border-div{
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .border-countries{
     display: inline;
     font-family: NunitoSans-Bold;
     margin-left: 20px;
-    font-size: 14px;
+    font-size: 16px;
 }
 .border-btns{
     display: inline;
@@ -86,15 +91,15 @@ body{
 
 .border{
     font-family: NunitoSans-Regular;
-    font-size: 12px;
+    font-size: 14px;
     background-color: #fff;
     border: none;
     box-shadow: 1px 1px 1px 2px #eee;
     border-radius: 2px;
-    margin-right: 6px;
-    width: 90px;
-    padding: 5px 15px;
+    margin-right: 10px;
+    width: 100px;
     text-align: center;
+    padding: 5px;
 }
 
 @media (max-width: 600px){
@@ -131,8 +136,5 @@ body{
         display: block;
         margin-left: 20px;
         margin-bottom: 50px;
-    }
-    body{
-        background-color: teal;
     }
 }
