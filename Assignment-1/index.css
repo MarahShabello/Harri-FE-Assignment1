@@ -3,44 +3,20 @@
     src: url("fonts/Nunito_Sans/NunitoSans-Black.ttf");
 }
 @font-face {
-    font-family: NunitoSans-BlackItalic;
-    src: url("fonts/Nunito_Sans/NunitoSans-BlackItalic.ttf");
-}
-@font-face {
     font-family: NunitoSans-Bold;
     src: url("fonts/Nunito_Sans/NunitoSans-Bold.ttf");
-}
-@font-face {
-    font-family: NunitoSans-BoldItalic;
-    src: url("fonts/Nunito_Sans/NunitoSans-BoldItalic.ttf");
 }
 @font-face {
     font-family: NunitoSans-ExtraBold;
     src: url("fonts/Nunito_Sans/NunitoSans-ExtraBold.ttf");
 }
 @font-face {
-    font-family: NunitoSans-ExtraBoldItalic;
-    src: url("fonts/Nunito_Sans/NunitoSans-ExtraBoldItalic.ttf");
-}
-@font-face {
     font-family: NunitoSans-ExtraLight;
     src: url("fonts/Nunito_Sans/NunitoSans-ExtraLight.ttf");
 }
 @font-face {
-    font-family: NunitoSans-ExtraLightItalic;
-    src: url("fonts/Nunito_Sans/NunitoSans-ExtraLightItalic.ttf");
-}
-@font-face {
-    font-family: NunitoSans-Italic;
-    src: url("fonts/Nunito_Sans/NunitoSans-Italic.ttf");
-}
-@font-face {
     font-family: NunitoSans-Light;
     src: url("fonts/Nunito_Sans/NunitoSans-Light.ttf");
-}
-@font-face {
-    font-family: NunitoSans-LightItalic;
-    src: url("fonts/Nunito_Sans/NunitoSans-LightItalic.ttf");
 }
 @font-face {
     font-family: NunitoSans-Regular;
@@ -50,37 +26,42 @@
     font-family: NunitoSans-SemiBold;
     src: url("fonts/Nunito_Sans/NunitoSans-SemiBold.ttf");
 }
-@font-face {
-    font-family: NunitoSans-SemiBoldItalic;
-    src: url("fonts/Nunito_Sans/NunitoSans-SemiBoldItalic.ttf");
-}
+
 /*
 Very Dark Blue: #111517
 Dark Grey: #858585
 Very Light Grey: #fafafa
 */
 
+/** {*/
+/*    box-sizing: border-box;*/
+/*    !*font-family: 'Nunito Sans', sans-serif;*!*/
+/*}*/
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #fafafa;
-    display: block;
+    /*display: block;*/
     margin: 0;
     align-content: center;
     align-items: center;
     color: #111517;
+
 }
-nav {
+header {
     font-family: NunitoSans-Black;
-    width: 93%;
+    width: 100%;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: flex;
     align-items: center;
-    padding: 5px 60px;
+    padding: 0 60px;
     justify-content: space-between;
+    /*font-weight: 900;*/
 }
-nav p{
-    font-size: 17px;
-}
+
 .dark-mode {
     background-color: transparent;
     border: none;
@@ -93,14 +74,15 @@ nav p{
 }
 
 .search-bar {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 20px 60px;
+    margin: 20px 0;
+    padding: 0 60px;
 }
 
 .search {
-    width: 370px;
+    width: 500px;
     padding: 18px 20px 18px 55px;
     border: none;
     border-radius: 5px;
@@ -112,18 +94,23 @@ nav p{
 }
 
 .container{
-    display: block;
-    height: auto;
-    margin: 20px;
+    width: 100%;
+    padding: 0 20px;
+    display: grid;
+    /*grid-template-columns: repeat(4, 1fr);*/
+    grid-template-columns: repeat(4, minmax(calc(25% - 80px), 1fr));
+    grid-template-rows: auto;
+    grid-gap: 5rem;
+    max-width: 1440px;
+    margin: 40px auto;
 }
 .box{
-    display: inline-block;
-    width: 260px;
+    width: 100%;
     height: max-content;
     border: none;
     background: #fff;
     border-radius: 10px;
-    margin: 20px 40px;
+    /*margin: 20px 40px;*/
     text-align: left;
     padding-bottom: 30px;
     box-shadow: 1px 1px 10px 1px #eee;
@@ -152,7 +139,10 @@ a{
     list-style-type: none;
     font-size: 14px;
     margin-left: 0;
-    padding: 0 0 0 20px;
+    padding: 0 20px 0 20px;
+}
+.country-info li{
+    padding-bottom: 5px;
 }
 .info-col1 {
     display: inline;
@@ -196,7 +186,7 @@ a{
     font-size: 12px;
     background-color: #fff;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     margin-top: 3px;
     border: none;
     border-radius: 5px;
@@ -221,7 +211,7 @@ a{
 
 @media (max-width: 600px){
     .search-bar{
-        display: inline-block;
+        display: block;
     }
     .dropdown-list{
         display: block;
@@ -235,7 +225,7 @@ a{
         margin-right: auto;
     }
     .box{
-        width: 80%;
+        width: 100%;
     }
     .country-info{
         font-size: 16px;
@@ -249,10 +239,16 @@ a{
         height: 200px;
         object-fit: cover;
     }
-    nav{
-        width: 600px;
+    header{
+        width: 100%;
     }
-    nav p{
-        font-size: 14px;
-    }
+    /*.container{*/
+    /*    grid-template-columns: repeat(2, 1fr);*/
+    /*}*/
+    /*nav{*/
+    /*    width: 600px;*/
+    /*}*/
+    /*nav p{*/
+    /*    font-size: 14px;*/
+    /*}*/
 }
